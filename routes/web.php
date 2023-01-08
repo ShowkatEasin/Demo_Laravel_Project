@@ -9,5 +9,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/country', function () {
+    return view('country');
+});
+
 Route::get('/about',[myController::class, 'AboutPage']);
-Route::get('/calc',[myController::class, 'calc']);
+
+Route::get('/calc',[myController::class, 'Calc']);

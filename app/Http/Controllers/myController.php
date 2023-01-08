@@ -12,5 +12,8 @@ class myController extends Controller
     public function Calc(){
         return 5*6;
     }
+    public function Country(){
+        return view("{{route : CountryMiddle.php}}") ;
+    }
 }
     

@@ -11,7 +11,7 @@ Route::get('/', function () {
 
 Route::get('/country', function () {
     return view('country');
-});
+})->middleware('country');
 
 Route::get('/about',[myController::class, 'AboutPage']);
 
